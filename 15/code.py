@@ -58,8 +58,7 @@ print("Part One")
 ingredients = {}
 
 for line in [x for x in PathPlus("input.txt").read_lines() if x]:
-	name, raw_properties = line.split(':')
-	raw_properties = raw_properties.strip()
+	name, raw_properties = line.split(": ")
 	ingredients[name] = dict(map(lambda x: (x[0], int(x[1])), map(str.split, raw_properties.split(", "))))
 
 
