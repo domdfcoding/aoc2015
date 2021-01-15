@@ -106,7 +106,9 @@ first_valid_password = get_next_valid_password(current_password)
 if first_valid_password is None:
 	raise ValueError("No passwords are valid!")
 
-print("Santa's new password should be:", first_valid_password)  # vzbxxyzz
+print(
+		"Santa's new password should be:", first_valid_password
+		)  # vzbxxyzz  # lgtm [py/clear-text-logging-sensitive-data]
 
 # ==========================
 print("\nPart Two")
@@ -120,4 +122,6 @@ second_valid_password = get_next_valid_password(first_valid_password)
 if second_valid_password is None:
 	raise ValueError("No passwords are valid!")
 
-print("Santa's new password should be:", second_valid_password)  # vzcaabcc
+print(
+		"Santa's new password should be:", second_valid_password
+		)  # vzcaabcc  # lgtm [py/clear-text-logging-sensitive-data]
