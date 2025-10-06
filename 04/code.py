@@ -33,7 +33,7 @@ print("Part One")
 
 
 def get_hash(number: int) -> str:
-	hash_input = f"bgvyzdsv{number}".encode("UTF-8")
+	hash_input = f"bgvyzdsv{number}".encode()
 	return md5(hash_input).hexdigest()
 
 
